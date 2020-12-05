@@ -7,12 +7,13 @@
 [ext_resource path="res://obstacles/spikes/bigger spikes/SpikeStatic10.tscn" type="PackedScene" id=5]
 [ext_resource path="res://obstacles/guns/laser gun/LaserGun.tscn" type="PackedScene" id=6]
 [ext_resource path="res://objects/exit/Exit.tscn" type="PackedScene" id=7]
-[ext_resource path="res://Levels/Level_1/Level1.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Levels/Old Levels/Level_1/Level1.tscn" type="PackedScene" id=8]
 [ext_resource path="res://obstacles/guns/turret/Turret.tscn" type="PackedScene" id=9]
 [ext_resource path="res://obstacles/spikes/bigger spikes/SpikeStatic20.tscn" type="PackedScene" id=10]
 [ext_resource path="res://SoundPlayer/SoundPlayer.tscn" type="PackedScene" id=11]
 [ext_resource path="res://objects/exit/EnterLevel.tscn" type="PackedScene" id=12]
 [ext_resource path="res://Levels/demo_levels/LevelsForBoss/Stage 1/Stage1.gd" type="Script" id=13]
+
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 8.60693, 151.061 )

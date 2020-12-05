@@ -7,7 +7,7 @@
 extents = Vector2( 16.1921, 4.16149 )
 
 [sub_resource type="RectangleShape2D" id=2]
-extents = Vector2( 14.645, 4.921 )
+extents = Vector2( 16, 4.921 )
 
 [node name="PlatformSleeping" type="KinematicBody2D" groups=[
 "troll",
@@ -27,6 +27,6 @@ shape = SubResource( 1 )
 [node name="Area2D" type="Area2D" parent="."]
 
 [node name="CollisionShape2Dforplayer" type="CollisionShape2D" parent="Area2D"]
-position = Vector2( -1.355, -4.921 )
+position = Vector2( -0.0571713, -3.97712 )
 shape = SubResource( 2 )
 [connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]

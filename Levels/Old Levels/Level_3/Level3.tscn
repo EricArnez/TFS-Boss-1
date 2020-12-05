@@ -7,12 +7,13 @@
 [ext_resource path="res://objects/hook/Hook.tscn" type="PackedScene" id=5]
 [ext_resource path="res://objects/exit/Exit.tscn" type="PackedScene" id=6]
 [ext_resource path="res://obstacles/spikes/bigger spikes/bigger spike trap/EvenBiggerSpikeTrap.tscn" type="PackedScene" id=7]
-[ext_resource path="res://Levels/Level_3/GameManager.gd" type="Script" id=8]
-[ext_resource path="res://Levels/Level_3/Level3.gd" type="Script" id=9]
+[ext_resource path="res://Levels/Old Levels/Level_3/GameManager.gd" type="Script" id=8]
+[ext_resource path="res://Levels/Old Levels/Level_3/Level3.gd" type="Script" id=9]
 [ext_resource path="res://obstacles/spikes/bigger spikes/bigger spike trap/BiggerSpike.tscn" type="PackedScene" id=10]
 [ext_resource path="res://obstacles/spikes/spike/SpikeStatic.tscn" type="PackedScene" id=11]
 [ext_resource path="res://Levels/ParallaxBackground.tscn" type="PackedScene" id=12]
 [ext_resource path="res://SoundPlayer/SoundPlayer.tscn" type="PackedScene" id=13]
+
 
 [node name="Level3" type="Node2D"]
 script = ExtResource( 9 )

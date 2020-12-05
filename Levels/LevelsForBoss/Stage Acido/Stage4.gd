@@ -128,7 +128,6 @@ func _on_resetearAcidos_body_entered(body):
 		reset_acids()
 
 func _on_PlatformSleeping_changed_music():
-	print("esto se activo")
 	esta_sonando_musica_troll = true
 	
 	

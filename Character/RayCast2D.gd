@@ -12,4 +12,4 @@ func _physics_process(delta):
 	
 	
 func limit_raycast_lenght():
-	cast_to = Vector2(0.0, 750.0) #deberia ser hasta el limite de la camara
+	cast_to = Vector2(0.0, 700.0) #deberia ser hasta el limite de la camara

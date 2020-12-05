@@ -4,7 +4,7 @@
 [ext_resource path="res://Levels/Main Menu/Main Menu.gd" type="Script" id=2]
 [ext_resource path="res://TileMap/TileMap.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Character/Character_Controller.gd" type="Script" id=4]
-[ext_resource path="res://Levels/Intervals/Interval1/Stage1Interval.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Levels/Tutorial/Tutorial.tscn" type="PackedScene" id=5]
 [ext_resource path="res://objects/hook/Hook.tscn" type="PackedScene" id=6]
 [ext_resource path="res://objects/exit/Exit.tscn" type="PackedScene" id=7]
 [ext_resource path="res://UI/Cursor.tscn" type="PackedScene" id=8]
@@ -74,11 +74,6 @@ animations = [ {
 "name": "idle",
 "speed": 7.0
 }, {
-"frames": [ ExtResource( 50 ), ExtResource( 56 ) ],
-"loop": true,
-"name": "tackle",
-"speed": 10.0
-}, {
 "frames": [ ExtResource( 45 ), ExtResource( 16 ) ],
 "loop": true,
 "name": "hook",
@@ -89,14 +84,19 @@ animations = [ {
 "name": "walk",
 "speed": 20.0
 }, {
+"frames": [ ExtResource( 29 ) ],
+"loop": true,
+"name": "on_air",
+"speed": 10.0
+}, {
 "frames": [ ExtResource( 30 ), ExtResource( 26 ), ExtResource( 45 ), ExtResource( 16 ), ExtResource( 27 ), ExtResource( 19 ), ExtResource( 29 ), ExtResource( 28 ) ],
 "loop": true,
 "name": "jump",
 "speed": 10.0
 }, {
-"frames": [ ExtResource( 29 ) ],
+"frames": [ ExtResource( 50 ), ExtResource( 56 ) ],
 "loop": true,
-"name": "on_air",
+"name": "tackle",
 "speed": 10.0
 } ]
 

@@ -79,6 +79,28 @@ func shoot_lighting():
 		missed_shoot_start()
 	pass
 
+
+
+func tackle():
+	raycast2d.force_raycast_update()
+	if raycast2d.is_colliding():
+		if raycast2d.get_collider().is_in_group("enemy") and !hitted_enemy:
+			hitCount += 1
+			emit_signal("hit", hitCount, $HitPositionLeft.position)
+			last_hook_hitted = raycast2d.get_collider()
+			
+			var attraction_direction = (raycast2d.get_collider().get_global_position() - body.get_global_position()).normalized()
+			var enemy = raycast2d.get_collider()
+			#resetHitCount()
+			emit_signal("sound", 3)
+			#emit_signal("hit", hitCount, $HitPositionRight.position) 
+			hitted_enemy = true
+			csm.changeToTackle(attraction_direction, enemy)
+		if !raycast2d.get_collider().is_in_group("enemy"):
+			missed_tackle_start()
+	else:
+		missed_tackle_start()
+
 func shoot_attack():
 	raycast2d.force_raycast_update()
 	if hitCount >= 3:
@@ -93,27 +115,12 @@ func shoot_attack():
 				#raycast2d.get_collider().hitted()
 			else:
 				missed_attack_start()
-				
+
+
 func clear_hits():
 	resetHitCount()
 	emit_signal("hit", hitCount, $HitPositionRight.position) 
 
-func tackle():
-	raycast2d.force_raycast_update()
-	if raycast2d.is_colliding():
-		if raycast2d.get_collider().is_in_group("enemy"):
-			hitCount += 1
-			emit_signal("hit", hitCount, $HitPositionLeft.position)
-			last_hook_hitted = raycast2d.get_collider()
-			hitted_hook = false
-			var attraction_direction = (raycast2d.get_collider().get_global_position() - body.get_global_position()).normalized()
-			var enemy = raycast2d.get_collider()
-			#resetHitCount()
-			emit_signal("sound", 3)
-			#emit_signal("hit", hitCount, $HitPositionRight.position) 
-			csm.changeToTackle(attraction_direction, enemy)
-		if !raycast2d.get_collider().is_in_group("enemy"):
-			missed_tackle_start()
 
 func missed_shoot_start():
 	emit_signal("sound", 2)
@@ -136,6 +143,7 @@ func missed_tackle_start():
 	lighting.visible = true
 	lighting.set_default_color(ColorN("goldenrod",1))
 	$ShootTimer.start()
+	hitted_enemy = false
 
 func got_hit():
 	die() #no creo que este bueno lo de un hit y moris si agregamos un boss

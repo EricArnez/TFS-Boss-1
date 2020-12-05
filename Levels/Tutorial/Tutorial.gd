@@ -28,7 +28,8 @@ func _on_Restart_UI_timeOutRestart():
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	emit_signal("backgroundMusic", 1)
+	#queda mejor sin musica el tutorial. lo separa del juego.
+	#emit_signal("backgroundMusic", 1)
 	spawn_player()
 	pass # Replace with function body.
 

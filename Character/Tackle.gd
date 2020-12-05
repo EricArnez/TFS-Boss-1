@@ -65,8 +65,6 @@ func update(delta):
 	lighting.width = 10
 	lighting.visible = true
 	left_shot = get_viewport().size.x / 2 < target.x
-	#print("click ",target.x)
-	#print("viewport",get_viewport().size.x)
 	if left_shot:
 		animated.flip_h = false
 		animated.play("tackle")
@@ -88,5 +86,6 @@ func update(delta):
 		lighting.set_default_color(owner.default_aim_color)
 		lighting.width = 4
 		lighting.visible = false
+	owner.hitted_enemy = false
 	
 	

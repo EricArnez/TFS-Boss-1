@@ -2,12 +2,12 @@
 
 importer="ogg_vorbis"
 type="AudioStreamOGGVorbis"
-path="res://.import/BackgroundMusic3.ogg-f96fa2ac21beb00032f310f95607fa44.oggstr"
+path="res://.import/backgroundMusic3.ogg-146e23efe72990f9da586fffb30c5fde.oggstr"
 
 [deps]
 
-source_file="res://sounds/BackgroundMusic3.ogg"
-dest_files=[ "res://.import/BackgroundMusic3.ogg-f96fa2ac21beb00032f310f95607fa44.oggstr" ]
+source_file="res://sounds/backgroundMusic3.ogg"
+dest_files=[ "res://.import/backgroundMusic3.ogg-146e23efe72990f9da586fffb30c5fde.oggstr" ]
 
 [params]
 

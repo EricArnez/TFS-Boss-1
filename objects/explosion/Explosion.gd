@@ -13,7 +13,8 @@ func detonate_explosion():
 	$AnimatedSprite.set_process(true)
 	$AnimatedSprite.visible = true
 	$CollisionShape2D.disabled = false
-	$AnimatedSprite.play()
+	$AnimatedSprite.play("explosion")
+	$AudioStreamPlayer2D.play()
 	pass
 
 func _on_Explosion_body_entered(body):

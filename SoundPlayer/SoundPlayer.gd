@@ -5,15 +5,17 @@ onready var fxPlayer2 = $FxPlayer2
 onready var bgPlayer = $BgPlayer
 onready var fxEnemy = $FxEnemy
 onready var music = load("res://sounds/BackgroundMusic.ogg")
-onready var music2 = load("res://sounds/BackgroundMusic2.ogg")
-onready var music3 = load("res://sounds/BackgroundMusic3.ogg")
-onready var music4 = load("res://sounds/BackgroundMusic4.ogg")
+onready var music2 = load("res://sounds/backgroundMusic2.ogg")
+onready var music3 = load("res://sounds/backgroundMusic3.ogg")
+onready var music4 = load("res://sounds/backgroundMusic4.ogg")
 onready var explosion = load("res://sounds/Explosion.ogg")
 onready var grappHook = load("res://sounds/GrapplingHook.ogg")
 onready var tackle = load("res://sounds/Tackle.ogg")
 onready var portalG = load("res://sounds/portalGonza.ogg")
 onready var expPared = load("res://sounds/explosionPared.ogg")
 onready var elevator = load("res://sounds/elevator_music.ogg")
+onready var acid = load("res://sounds/acido.ogg")
+onready var missile_launch = load("res://sounds/VGExplosion.wav")
 
 var bgSoundsMap = {}
 var fxSoundsMap = {}
@@ -27,6 +29,8 @@ func _ready():
 	fxSoundsMap[2] = grappHook
 	fxSoundsMap[3] = tackle
 	fxSoundsMap[6] = portalG
+	fxSoundsMap[7] = acid
+	fxSoundsMap[8] = missile_launch
 	
 	fxSoundsMap2[0] = null
 	fxSoundsMap2[1] = expPared

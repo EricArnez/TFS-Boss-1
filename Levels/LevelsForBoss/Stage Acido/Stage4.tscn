@@ -242,13 +242,13 @@ position = Vector2( 1008, 6704 )
 position = Vector2( 968, 6440 )
 
 [node name="Hook17" parent="Hooks" instance=ExtResource( 6 )]
-position = Vector2( 744, 7072 )
+position = Vector2( 760, 7056 )
 
 [node name="Hook18" parent="Hooks" instance=ExtResource( 6 )]
-position = Vector2( 544, 7072 )
+position = Vector2( 520, 7024 )
 
 [node name="Hook19" parent="Hooks" instance=ExtResource( 6 )]
-position = Vector2( 504, 6808 )
+position = Vector2( 512, 6800 )
 
 [node name="Hook20" parent="Hooks" instance=ExtResource( 6 )]
 position = Vector2( 504, 6464 )
@@ -269,7 +269,7 @@ position = Vector2( 1016, 5664 )
 position = Vector2( 576, 5376 )
 
 [node name="Hook26" parent="Hooks" instance=ExtResource( 6 )]
-position = Vector2( 1240, 5320 )
+position = Vector2( 1216, 5320 )
 
 [node name="Hook28" parent="Hooks" instance=ExtResource( 6 )]
 position = Vector2( 4617.27, 7304 )
@@ -369,13 +369,13 @@ position = Vector2( -29.3574, 85.3481 )
 shape = SubResource( 3 )
 
 [node name="Position2DPlayerRespawn" type="Position2D" parent="."]
-position = Vector2( -2383.66, 7483.78 )
+position = Vector2( -2472, 7560 )
 
 [node name="PlatformSleeping" parent="." instance=ExtResource( 18 )]
 position = Vector2( 4752, 5424 )
 
 [node name="Character" parent="." instance=ExtResource( 9 )]
-position = Vector2( -2416.74, 7542.64 )
+position = Vector2( -2472, 7560 )
 
 [node name="Pause" parent="Character" instance=ExtResource( 21 )]
 

@@ -27,5 +27,4 @@ func isLastLevel():
 	return get_parent().get_name() == "Stage4" or get_parent().get_name() == "StageAcido"
 
 func _on_Timer_timeout():
-	print("asdasd")
 	get_tree().change_scene_to(next_scene)

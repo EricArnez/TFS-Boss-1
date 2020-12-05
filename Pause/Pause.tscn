@@ -3,16 +3,14 @@
 [ext_resource path="res://assets/PressStart2P-Regular.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://Pause/Pause.gd" type="Script" id=2]
 
-
-
-[sub_resource type="DynamicFont" id=6]
+[sub_resource type="DynamicFont" id=1]
 size = 40
 font_data = ExtResource( 1 )
 
-[sub_resource type="DynamicFont" id=7]
+[sub_resource type="DynamicFont" id=2]
 font_data = ExtResource( 1 )
 
-[sub_resource type="DynamicFont" id=8]
+[sub_resource type="DynamicFont" id=3]
 font_data = ExtResource( 1 )
 
 [node name="Pause" type="Control"]
@@ -49,7 +47,7 @@ margin_left = 22.5171
 margin_top = 14.5107
 margin_right = 262.517
 margin_bottom = 54.5107
-custom_fonts/font = SubResource( 6 )
+custom_fonts/font = SubResource( 1 )
 text = "Paused"
 align = 1
 valign = 1
@@ -62,7 +60,7 @@ margin_left = 51.6631
 margin_top = 68.7925
 margin_right = 221.663
 margin_bottom = 130.792
-custom_fonts/font = SubResource( 7 )
+custom_fonts/font = SubResource( 2 )
 text = "Resume"
 __meta__ = {
 "_edit_lock_": true
@@ -73,7 +71,7 @@ margin_left = 51.7593
 margin_top = 140.195
 margin_right = 221.759
 margin_bottom = 202.195
-custom_fonts/font = SubResource( 8 )
+custom_fonts/font = SubResource( 3 )
 text = "Quit game"
 __meta__ = {
 "_edit_lock_": true

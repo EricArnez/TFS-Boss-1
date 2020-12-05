@@ -29,8 +29,6 @@ func _change_state(state_name):
 		$Impulse.initialize(current_state.direction , current_state.velocity, current_state.hookPosition)	
 		
 	._change_state(state_name)
-	#print("se cambio el estado a")
-	#print(state_name)
 	
 		
 	

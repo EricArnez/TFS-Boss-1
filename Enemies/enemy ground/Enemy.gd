@@ -47,11 +47,16 @@ func _physics_process(delta):
 		if target != null and (target.global_position.x - global_position.x) < 0:
 			$AnimatedSprite2.play("idle")
 			$AnimatedSprite2.flip_h = true
+			
 			pos = $Position2D2.position
+			$AnimatedSpriteExplosion.position = $Position2D2.position
+			$AnimatedSpriteExplosion.flip_h = true
 		else:
 			$AnimatedSprite2.play("idle")
 			$AnimatedSprite2.flip_h = false
 			pos = $Position2D.position
+			$AnimatedSpriteExplosion.position = $Position2D.position
+			$AnimatedSpriteExplosion.flip_h = false
 
 func hitted():
 	isAlive = false
@@ -73,7 +78,8 @@ func _on_ShotTimer_timeout():
 	if target != null && (target.get_global_position().distance_to(self.get_global_position()) < radar):
 		target_in_sight = true
 		speed = 0
-		shoot()
+		if isAlive:
+			shoot()
 	else:
 		target_in_sight = false
 		speed = 30
@@ -81,9 +87,18 @@ func _on_ShotTimer_timeout():
 			
 func shoot():
 	if isAlive:
+		
+		#$AnimatedSpriteExplosion.visible = true
+		#$AnimatedSpriteExplosion.play("default")
 		yield(get_tree().create_timer(0.5), "timeout")
 		var misil = Missile.instance()
 		#emit_signal("sound_missile", 2)
 		misil.target = target
 		misil.position = pos
 		add_child(misil)
+		$AudioStreamPlayer2D.play()
+
+
+func _on_AnimatedSpriteExplosion_animation_finished():
+	#$AnimatedSpriteExplosion.visible = false
+	pass # Replace with function body.
